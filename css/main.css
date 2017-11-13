@@ -299,7 +299,7 @@ a:focus, button:focus, .btn:focus,
 }
 
 #navigation.menu-two .navbar-nav>li a {
-    padding: 28px 16px;
+    padding: 28px 18px;
     height: inherit;
     position: inherit !important;
 }
