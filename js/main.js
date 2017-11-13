@@ -126,7 +126,7 @@ $('.scroll a').click(function() {
     if ($('.home-two .navbar').hasClass('navbar-fixed-top')) {
         dest = $(this.hash).offset().top - 30
     } else {
-        dest = $(this.hash).offset().top - 139
+        dest = $(this.hash).offset().top - 90
     }
 
     $('html, body').animate({scrollTop: dest}, 1000);
@@ -160,10 +160,12 @@ function Scroll() {
         var windowWidth = $(window).width();
         if(windowWidth > 991 ){
             $(window).on('scroll', function(){
-                if( $(window).scrollTop()>335 ){
+                if( $(window).scrollTop()>690 ){
                     $('.home-two .navbar').addClass('navbar-fixed-top');
+                    $('body').css('padding-top', '88px');
                 } else {
                     $('.home-two .navbar').removeClass('navbar-fixed-top');
+                    $('body').css('padding-top', '0');
                 };
             });
         }else{
