@@ -721,6 +721,10 @@ ul.sub-menu {
 
 .text-info h4 {}
 
+.text-info a {
+    color: #337ab7;
+}
+
 /* Exprience Section */
 
 .exprience-section .exprience {
@@ -830,7 +834,8 @@ ul.sub-menu {
     left: 0;
     font-size: 16px;
     font-weight: normal;
-    padding-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 20px;
 }
 
