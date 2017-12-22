@@ -479,7 +479,8 @@ ul.sub-menu {
 .banner-info h3 {
     font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 11px;
+    margin-left: -8px;
 }
 
 /* Home Two  */
