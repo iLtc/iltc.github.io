@@ -5,6 +5,9 @@
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .banner-content, #home-banner {
+        height: 650px;
+    }
 
 	.banner-info h2 {
 	    font-size: 110px;
@@ -47,42 +50,46 @@
 }
 
 @media (max-width: 991px) {
-  .navbar-header {
-      float: none;
-  }
-  .navbar-left,.navbar-right {
-      float: none !important;
-  }
-  .navbar-toggle {
-      display: block;
-      margin-top: 17px;
-  }
-  .navbar-collapse.collapse {
-      display: none!important;
-  }
-  .navbar-nav {
-      float: none!important;
-  }
-  .navbar-nav>li {
-      float: none;
-  }
-  .collapse.in{
-      display:block !important;
-  }
-  .home-two .home-social {
-		top: 100px;
-	}
-	.banner-content .banner-info {
-		top: 100%;
-		margin-top: -220px;
-	}
-	#navigation .navbar:before {
-		width: 200%;
-	}
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        margin-top: 17px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    .home-two .home-social {
+        top: 100px;
+    }
+    .banner-content .banner-info {
+        top: 100%;
+        margin-top: -220px;
+    }
+    #navigation .navbar:before {
+        width: 200%;
+    }
 }
 
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
+    .banner-content, #home-banner {
+        height: 600px;
+    }
+
 	.navbar-toggle  {
 	 	margin-top: 15px;
 	}
@@ -225,6 +232,10 @@
 
 /* xs */
 @media (max-width: 767px) {
+    .banner-content, #home-banner {
+        height: 550px;
+    }
+
 	#navigation .navbar:before {
 		width: 200%;
 	}
@@ -537,6 +548,9 @@
 
 /* XS Portrait */
 @media (max-width: 479px) {
+    .banner-content, #home-banner {
+        height: 500px;
+    }
 
 	.banner-info h2 {
 		font-size: 48px;
