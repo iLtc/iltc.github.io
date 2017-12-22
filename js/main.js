@@ -122,6 +122,7 @@ $(window).scroll(function(event) {
 }); 
 
 $('.scroll a').click(function() {
+    $(".navbar-collapse").collapse('hide')
     var dest = 0;
     if ($('.home-two .navbar').hasClass('navbar-fixed-top')) {
         dest = $(this.hash).offset().top - 30

@@ -353,6 +353,9 @@ a:focus, button:focus, .btn:focus,
     margin: 0 auto;
 }
 
+.navbar-fixed-top .navbar-collapse {
+    max-height: 380px;
+}
 
 /*Dropdown CSS*/
 
