@@ -557,7 +557,7 @@ ul.sub-menu {
     margin-bottom: 40px;
 }
 
-.about-section address span {
+.about-section address span:not(.base64) {
     font-weight: 700;
 }
 
@@ -1204,6 +1204,10 @@ img.mfp-img {
 
 .profile-info address a:hover {
     color: #87c05e;
+}
+
+.profile-info address span:not(.base64) {
+    font-weight: 700;
 }
 
 .profile-section h3 {
