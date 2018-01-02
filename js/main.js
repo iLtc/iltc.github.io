@@ -177,7 +177,27 @@ function Scroll() {
     }
 
     menuToggle();
-}()); 
+}());
 
+String.prototype.format = function() {
+    var formatted = this;
+    for (var i = 0; i < arguments.length; i++) {
+        var regexp = new RegExp('\\{'+i+'\\}', 'gi');
+        formatted = formatted.replace(regexp, arguments[i]);
+    }
+    return formatted;
+};
 
+// Decode Base64
+(function () {
+    $('.base64').each(function() {
+        var code = /'(.+)'/g.exec($(this).text())[1];
+        var text = atob(code);
 
+        var url = text.includes('@') ? 'mailto:' + text : 'tel:' + text;
+
+        var html = "<a href='{0}'>{1}</a>".format(url, text);
+
+        $(this).html(html);
+    });
+}());
