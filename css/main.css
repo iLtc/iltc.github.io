@@ -1595,4 +1595,8 @@ a, #contact-section li a i:hover,
     font-weight: normal;
     font-style: normal;
 
-} 
+}
+
+#google_translate_element {
+    display: none;
+}
