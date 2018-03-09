@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iLtc - Technology and I</title>
+    <link rel="stylesheet" href="css/new.css">
+</head>
+<body>
+<main class="container">
+    <section class="content">
+        <h1>iLtc</h1>
+        <p></p>
+    </section>
+</main>
+
+<footer>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    var text_list = [
+        "Technology and I",
+        "PHP Is the Best Language in the World",
+        "I Love Watermelon"
+    ];
+
+    var showLetter = function (message, index, interval) {
+        if (index < message.length) {
+            $("p").append(message[index++]);
+            setTimeout(function () {
+                showLetter(message, index, interval);
+            }, interval);
+        } else {
+            setTimeout(function () {
+                showText($("p").text());
+            }, 7000);
+        }
+    };
+
+    var showText = function (old_text) {
+        var new_text;
+
+        while (true) {
+            new_text = text_list[Math.floor(Math.random()*text_list.length)];
+            if (new_text !== old_text) break;
+        }
+
+        $("p").text("");
+        showLetter(new_text, 0, 100);
+    };
+
+    $(function () {
+        showText(null);
+    });
+</script>
+</body>
+</html>

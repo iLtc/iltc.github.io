@@ -1,0 +1,46 @@
+html, body {
+    font-size: 16px;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 400;
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #21211f;
+    font-size: 7.35rem;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -0.1rem;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+main {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: #21211f;
+    font-size: 1.03rem;
+    line-height: 0;
+    letter-spacing: 0.135rem;
+    margin: 0;
+    padding: 0 0 0 0.3rem;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+}
