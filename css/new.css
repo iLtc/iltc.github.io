@@ -60,3 +60,31 @@ footer a {
     font-size: 30px;
     transition: all 0.5s ease;
 }
+
+footer a:hover {
+    transition: all 0.5s ease;
+}
+
+footer a.resume:hover {
+    color: #3465AB;
+}
+
+footer a.contact:hover {
+    color: #CD1D2B;
+}
+
+footer a.linkedin:hover {
+    color: #0077B5;
+}
+
+footer a.blog:hover {
+    color: #FC9802;
+}
+
+footer a.dropbox:hover {
+    color: #0058FF;
+}
+
+footer a.link:hover {
+    color: #257AAA;
+}
