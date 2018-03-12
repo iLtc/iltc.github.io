@@ -44,3 +44,19 @@ p {
     font-style: normal;
     font-weight: 400;
 }
+
+footer {
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+footer a {
+    padding: 0 0.5rem;
+    color: #21211f;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
