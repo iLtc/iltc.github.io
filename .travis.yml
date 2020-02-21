@@ -5,4 +5,4 @@ script:
   - git clone https://github.com/iLtc/iltc.github.io.git
   - cd iltc.github.io
   - git remote add gitee git@gitee.com:iltc/iltc.github.io.git
-  - git push gitee master
+  - yes | git push gitee master
