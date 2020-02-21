@@ -1,9 +1,11 @@
 language: minimal
 node_js:
-  - 10
+- 10
 script:
-  - if [ ! -n "$(grep "^gitee.com " ~/.ssh/known_hosts)" ]; then ssh-keyscan gitee.com >> ~/.ssh/known_hosts 2>/dev/null; fi
-  - git clone https://github.com/iLtc/iltc.github.io.git
-  - cd iltc.github.io
-  - git remote add gitee git@gitee.com:iltc/iltc.github.io.git
-  - yes | git push gitee master
+- git clone https://github.com/iLtc/iltc.github.io.git
+- cd iltc.github.io
+- git remote add gitee https://${GITEE_ROBOT}@gitee.com/iltc/iltc.github.io.git
+- git push gitee master
+env:
+  global:
+    secure: U7a1cDJ6nYyMCO218NM+lmm+PJU8oj4AewbP8FzZR3lS7oT4B9KaaYfvGrDqnyXcXCA9XK0v7QdN/2FrHpkeH9kQLZjj6VDNcx/aXDcp552WISQM/ZmBe9eZLflsqrnqbrzlHHi0fBmRuqRkvI0zZFSOlLY8bCTIQT+5A+orFqdWVZgbXQafZxE1oUYwMiQD4XbiRIfZlZ4xzKHFdLJpjgyMMZhNMdTd7LLyHBe2n73zSBW2gGOj89tLnamGju7OUiYa810d+76yggp9hoIpYpvk0iMheJJMgZo8XG1pKRz4DEpUnewf1ezQFUKUSSEVWUcGbeKeoZ6pyDm1woPa2fIxPU/ARdnQwOEzVEPz6vAAAB2y5B7yqUpeS7jHpkgqpLTB5F3F3lV//d/OWo/UnGIbBj24/WtdHiU+PFIlhp94yAc3OkUKSsJbYWCeSBD6ZhW0kufZzFlzGdiV9LoXHbJEpp/GTkZeKvhB+k7Wptuil7xVlqcE2KB9ygUXK8ba2ouFJ2HvBJOZFhxQ7hDiuWmQ6UuiUvXz+h8wIUpMFrS1fxIIUeQcCLM6L9HqmzYNQH3dUsGd4r5mno6g9r0XNpTG9rHBz3pDeomHlpJ9mVsisKeOuE9V6bbJfyMKlRPEO0fUF6qOvrsypyrpdo7KG+p5pPzC/kuS339Kvm2pf3k=
