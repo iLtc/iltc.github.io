@@ -2,6 +2,7 @@ language: minimal
 node_js:
   - 10
 script:
+  - if [ ! -n "$(grep "^gitee.com " ~/.ssh/known_hosts)" ]; then ssh-keyscan gitee.com >> ~/.ssh/known_hosts 2>/dev/null; fi
   - git clone https://github.com/iLtc/iltc.github.io.git
   - cd iltc.github.io
   - git remote add gitee git@gitee.com:iltc/iltc.github.io.git
