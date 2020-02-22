@@ -2,8 +2,6 @@ language: minimal
 node_js:
 - 10
 script:
-- git clone https://github.com/iLtc/iltc.github.io.git
-- cd iltc.github.io
 - git remote add gitee https://$GITEE_ROBOT@gitee.com/iltc/iltc.github.io.git
 - git push gitee master
 env:
