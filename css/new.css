@@ -88,3 +88,11 @@ footer a.dropbox:hover {
 footer a.link:hover {
     color: #257AAA;
 }
+
+footer a.map:hover {
+    color: #CD1D2B;
+}
+
+footer a.calendar:hover {
+    color: #1AA260;
+}
