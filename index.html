@@ -41,7 +41,7 @@
         "WordPress"
     ];
 
-    var showLetter = function (message, index, interval) {
+    const showLetter = function (message, index, interval) {
         if (index < message.length) {
             $("p").append(message[index++]);
             setTimeout(function () {
@@ -54,7 +54,7 @@
         }
     };
 
-    var showText = function (old_text) {
+    const showText = function (old_text) {
         var new_text;
 
         while (true) {
