@@ -93,6 +93,10 @@ footer a.map:hover {
     color: #CD1D2B;
 }
 
+footer a.book:hover {
+    color: #00635d;
+}
+
 footer a.calendar:hover {
     color: #1AA260;
 }
