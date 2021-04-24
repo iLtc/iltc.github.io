@@ -97,6 +97,10 @@ footer a.book:hover {
     color: #00635d;
 }
 
+footer a.game:hover {
+    color: #665cbe;
+}
+
 footer a.calendar:hover {
     color: #1AA260;
 }
